@@ -6,7 +6,8 @@ select trr.user_id,
 from analysis.tmp_rfm_recency trr 
 inner join analysis.tmp_rfm_frequency trf on trr.user_id = trf.user_id 
 inner join analysis.tmp_rfm_monetary_value trmv on trr.user_id = trmv.user_id;
-
+/*
+Первые 10 строк результирующей таблицы dm_rfm_segments, отсортированные по user_id ASC
 0	1	3	4
 1	4	3	3
 2	2	3	5
@@ -17,3 +18,4 @@ inner join analysis.tmp_rfm_monetary_value trmv on trr.user_id = trmv.user_id;
 7	4	2	2
 8	1	1	3
 9	1	3	2
+*/
